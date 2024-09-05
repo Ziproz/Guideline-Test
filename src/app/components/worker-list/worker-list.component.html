@@ -1,0 +1,17 @@
+
+<h2>Workers List</h2>
+<div>
+    <ul>
+        <li *ngFor="let worker of workers">
+          <strong>Name:</strong> {{ worker.name }}<br>
+          <strong>Department:</strong> {{ worker.departmentType }}<br>
+          <strong>Role:</strong> {{ worker.workerType }}
+        </li>
+      </ul>
+</div>
+
+<div>
+    <!-- more - details -->
+    <input [(ngModel)]="message" placeholder="Write a message" />
+    <button (click)="sendMessage()">Submit</button>
+</div>

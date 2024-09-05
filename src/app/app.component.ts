@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+//import { RouterOutlet } from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { WorkerListComponent } from './components/worker-list/worker-list.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterModule, WorkerListComponent],
+  // SpinnerComponent
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
